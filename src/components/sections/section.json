@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_sections_sections",
+  "info": {
+    "displayName": "Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "content": {
+      "type": "blocks"
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.button"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "class": {
+      "type": "string"
+    }
+  }
+}
