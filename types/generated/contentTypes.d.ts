@@ -379,6 +379,8 @@ export interface ApiPagePage extends Schema.CollectionType {
     banner: Attribute.Component<'sections.banner', true>;
     section: Attribute.Component<'sections.section'>;
     cards: Attribute.Component<'sections.cards', true>;
+    timeline: Attribute.Component<'sections.section'>;
+    icons: Attribute.Component<'sections.icon', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

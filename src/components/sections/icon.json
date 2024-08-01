@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_sections_icons",
+  "info": {
+    "displayName": "Icon",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "link": {
+      "type": "string"
+    },
+    "content": {
+      "type": "blocks"
+    },
+    "class": {
+      "type": "string"
+    },
+    "logo_title": {
+      "type": "string"
+    }
+  }
+}

@@ -36,6 +36,16 @@
       "type": "component",
       "repeatable": true,
       "component": "sections.cards"
+    },
+    "timeline": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.section"
+    },
+    "icons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.icon"
     }
   }
 }

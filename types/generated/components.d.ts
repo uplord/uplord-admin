@@ -13,6 +13,24 @@ export interface SectionsSection extends Schema.Component {
     buttons: Attribute.Component<'components.button', true>;
     image: Attribute.Media<'images'>;
     class: Attribute.String;
+    icons: Attribute.Component<'sections.icon', true>;
+  };
+}
+
+export interface SectionsIcon extends Schema.Component {
+  collectionName: 'components_sections_icons';
+  info: {
+    displayName: 'Icon';
+    description: '';
+  };
+  attributes: {
+    subtitle: Attribute.String;
+    title: Attribute.String;
+    logo: Attribute.Media<'images'>;
+    link: Attribute.String;
+    content: Attribute.Blocks;
+    class: Attribute.String;
+    logo_title: Attribute.String;
   };
 }
 
@@ -65,6 +83,7 @@ declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'sections.section': SectionsSection;
+      'sections.icon': SectionsIcon;
       'sections.cards': SectionsCards;
       'sections.banner': SectionsBanner;
       'components.button': ComponentsButton;
